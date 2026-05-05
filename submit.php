@@ -1,7 +1,7 @@
 <?php
 include "connect.php";
 
-if(isset($_POST['submit'])){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -16,5 +16,10 @@ if(isset($_POST['submit'])){
     } else {
         echo "Error: " . mysqli_error($conn);
     }
+
+} else {
+    // If someone tries to open submit.php directly
+    header("Location: index.html");
+    exit();
 }
 ?>
