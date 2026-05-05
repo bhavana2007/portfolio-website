@@ -1,0 +1,158 @@
+/* 🌐 Background Gradient */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* 📦 Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* 🔝 Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* 🚀 Hero */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+/* 💻 Skills */
+.skill-box {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    background: #38bdf8;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* 📁 Projects */
+.project-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    margin: 15px auto;
+    width: 320px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* 📞 Contact */
+.contact-links a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* 📝 Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin: 10px 0;
+}
+
+/* 🔘 Button */
+button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+}

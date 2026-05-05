@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bhavana Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>Bhavana</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Hi, I'm Bhavana Kolli</h1>
+  <p>Aspiring Full Stack Developer</p>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate student interested in full stack web development.
+    I enjoy building websites and learning new technologies to create real-world applications.
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skill-box">HTML</div>
+  <div class="skill-box">CSS</div>
+  <div class="skill-box">JavaScript</div>
+  <div class="skill-box">PHP</div>
+  <div class="skill-box">MySQL</div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Personal Portfolio Website (Full Stack)</h3>
+    <p>
+      Developed a responsive personal portfolio website using HTML, CSS, and JavaScript. 
+      Integrated backend functionality using PHP and MySQL to handle contact form submissions.
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>Library Management System (Java)</h3>
+    <p>
+      Built a console-based application to manage library operations such as adding, issuing, 
+      and returning books. Focused on logic building and data handling using Java.
+      <br>
+       <a href="https://github.com/bhavana2007/library-management-system" target="_blank">View Code</a>
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>House Price Prediction (Machine Learning)</h3>
+    <p>
+      Developed a machine learning model to predict house prices based on input features 
+      using regression techniques.
+      <br>
+     <a href="https://github.com/bhavana2007/house-price-prediction-ml" target="_blank">View Code</a>
+    </p>
+  </div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <p>Feel free to reach out to me</p>
+
+  <div class="contact-links">
+    <p>Email: <a href="mailto:bhavanakolli983@gmail.com">bhavanakolli983@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhavana-kolli-020b35368/" target="_blank">View Profile</a></p>
+    <p>GitHub: <a href="https://github.com/bhavana2007" target="_blank">View My Work</a></p>
+  </div>
+
+  <br>
+
+  <h3>Send me a message</h3>
+
+  <form action="submit.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+    <button type="submit" name="submit">Send</button>
+  </form>
+
+</section>
+
+<!-- Footer -->
+<footer style="text-align:center; padding:20px; background:#020617;">
+  <p>© 2026 Bhavana | All Rights Reserved</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    if(params.get("success")){
+        alert("Message sent successfully!");
+    }
+</script>
+
+</body>
+</html>
